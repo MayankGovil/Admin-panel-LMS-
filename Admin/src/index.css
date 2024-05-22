@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myclass{
+    position: relative !important;
+    inset: 0px auto auto 0px;
+    margin:0px 0px 7px 0px !important;
+
+    transform: none !important;
+    transition: 1s !important;
+}
+table{
+    width: 100%;
+    border: 1px solid gray;
+}
+table tr th{
+    border: 1px solid gray;
+    padding: 20px;
+}
+table tr td{
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+
+
+/* For pop up of image and desicription of courses and slider */
+.popup {
+    overflow: hidden;
+    width: 500px;
+    position: fixed;
+    top: 47%;
+    left: 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 5px solid blueviolet;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  
+  .popup img{
+    width: 460px;
+    height: 260px;
+    overflow: hidden;
+    margin: 12px;
+   
+  }
+  .popup .close {
+    font-size: 40px;
+    color: rgb(0, 100, 249);
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .activepopup {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.6s;
+  }
+  
+  .mainOverlay {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+  }
+  
+  .activemainOverlay {
+    transform: scale(1.0);
+  }
+  
+/* Css for button for view vedios by using course category */
+  .category-buttons {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }/* This the css of parent div that contain buttons having diffrent course category*/
+  
+  .category-buttons button {
+    margin-right: 5px !important;
+    border: 2px solid #4B49AC !important;
+    border-radius: 20px !important;
+    transition: 0.5s !important;
+  }/* This the CSS of course category button */
+  .category-buttons button:hover{
+    background-color:#4B49AC;
+    color: #fff;
+    border: none !important;;
+    
+  }
